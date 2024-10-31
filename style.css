@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #DA4453;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.todoapp {
+    background-color: aliceblue;
+    width: 30%;
+    background: #fff;
+    margin: 20vh auto 20vh;
+    padding: 8vh 6vh 10vh;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    background: #edeef0;
+    border-radius: 10px;
+    height: 30px;
+    width: 320px;
+    gap: 20px;
+    border: 1px solid black;
+}
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    gap: 20px;
+    padding-right: 200px;
+}
+button {
+    height: 4.8vh;
+    min-width: 8vh;
+    background-color: #89216B;
+    color: white;
+    border-radius: 18px;
+}
+.todo {
+    padding-bottom: 8vh;
+}
+ul li {
+    list-style-type: none;
+    font-size: 3vh;
+    padding: 12px 8px 12px 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative; /* Add this to position the ::after element relative to the li */
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: -20px; /* Adjust this value to set the distance from the text */
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%); /* Center the image vertically */
+}
+ul li input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ul li span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 5vh;
+    height: 5vh;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover {
+    background: #edeef0;
+}
+button:hover {
+    background-color: #66194d;
+}
+
+@media (max-width: 768px) {
+    /* Mobile devices */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #DA4453;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #DA4453;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .todoapp {
+        background-color: aliceblue;
+        width: 50%;
+        background: #fff;
+        margin: 20vh auto 20vh;
+        padding: 8vh 6vh 10vh;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        background: #edeef0;
+        border-radius: 10px;
+        height: 30px;
+        width: 260px;
+        gap: 130px;
+        border: 1px solid black;
+    }
+    input {
+        border: none;
+        outline: none;
+        background: transparent;
+        gap: 20px;
+        padding-right: 20px;
+    }
+    button {
+        height: 4.8vh;
+        min-width: 8vh;
+        background-color: #89216B;
+        color: white;
+        border-radius: 18px;
+    }
+    .todo {
+        padding-bottom: 8vh;
+    }
+    ul li {
+        list-style-type: none;
+        font-size: 3vh;
+        padding: 12px 8px 12px 20px;
+        cursor: pointer;
+        user-select: none;
+        position: relative; /* Add this to position the ::after element relative to the li */
+    }
+    ul li::before {
+        content: '';
+        position: absolute;
+        height: 14px;
+        width: 14px;
+        left: -20px; /* Adjust this value to set the distance from the text */
+        top: 50%; /* Center the image vertically */
+        transform: translateY(-50%); /* Center the image vertically */
+    }
+    ul li input[type="checkbox"] {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    ul li span {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 5vh;
+        height: 5vh;
+        font-size: 22px;
+        color: #555;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    ul li span:hover {
+        background: #edeef0;
+    }
+    button:hover {
+        background-color: #66194d;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Tablets */
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Laptops and desktops */
+    body {
+        font-size: 18px;
+    }
+}
