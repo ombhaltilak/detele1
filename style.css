@@ -99,7 +99,7 @@ button:hover {
     background-color: #66194d;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     /* Mobile devices */
     * {
         padding: 0;
